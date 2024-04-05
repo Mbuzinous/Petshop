@@ -1,0 +1,70 @@
+﻿@page
+@using Petshop.Models
+@model Petshop.Pages.Animals.RabbitsModel
+@{
+}
+@{
+    ViewData["Title"] = "All Rabbits";
+
+}
+<h1>Get All Rabbits</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Type
+            </th>
+            <th>
+                Navn
+            </th>
+            <th>
+                Alder
+            </th>
+            <th>
+                Køn
+            </th>
+            <th>
+                Beskrivelse
+            </th>
+            <th>
+                Pris
+            </th>
+            <th>
+                Billede
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (Animal item in Model.Animals.Values)
+            {
+                if (item is Rabbit)
+                {
+                    <tr>
+                        <td>
+                            @item.Type
+                        </td>
+                        <td>
+                            @item.Navn
+                        </td>
+                        <td>
+                            @item.Alder
+                        </td>
+                        <td>
+                            @item.Køn
+                        </td>
+                        <td>
+                            @item.Beskrivelse
+                        </td>
+                        <td>
+                            @item.Pris
+                        </td>
+                        <td>
+                            <img src="~/Images/@item.BilledeNavn" width="60" height="70">
+                        </td>
+                    </tr>
+                }
+            }
+        }
+    </tbody>
+</table>
