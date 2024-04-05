@@ -7,18 +7,55 @@
 }
 <h1>All Aniamls</h1>
 
-<p>
-    <a asp-page="Cats">All Cats</a>
-</p>
-<p>
-    <a asp-page="Dogs">All Dogs</a>
-</p>
-<p>
-    <a asp-page="Guineapig">All Guineapig</a>
-</p>
-<p>
-    <a asp-page="Rabbits">All Rabbits</a>
-</p>
-<p>
-    <a asp-page="Zebras">All Zebras</a>
-</p>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card">
+            <a href="/Animals/Dogs">
+                <img src="~/Images/hund.jpg" width="120" height="300" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+                <a href="/Animals/Dogs" class="btn btn-success">All Dogs</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <a href="/Animals/Cats">
+                <img src="~/Images/Allcats.jpg" width="120" height="300" class="card-img-top " alt="...">
+            </a>
+            <div class="card-body">
+                <a href="/Animals/Cats" class="btn btn-success">All Cats</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <a href="/Animals/Zebras">
+                <img src="~/Images/zebra.jpg" width="120" height="300" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+                <a href="/Animals/Zebras" class="btn btn-success">All Zebras</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <a href="/Animals/Rabbits">
+                <img src="~/Images/kanin.png" width="120" height="300" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+                <a href="/Animals/Rabbits" class="btn btn-success">All Rabbits</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <a href="/Animals/Guineapigs">
+                <img src="~/Images/marsvin.jpg" width="120" height="300" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+                <a href="/Animals/Guineapigs" class="btn btn-success">All Guineapigs</a>
+            </div>
+        </div>
+    </div>
+</div>

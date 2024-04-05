@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Animals\AnimalMoreImages\" />
+    <Compile Remove="Pages\Animals\AnimalMoreImages\**" />
+    <Content Remove="Pages\Animals\AnimalMoreImages\**" />
+    <EmbeddedResource Remove="Pages\Animals\AnimalMoreImages\**" />
+    <None Remove="Pages\Animals\AnimalMoreImages\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 

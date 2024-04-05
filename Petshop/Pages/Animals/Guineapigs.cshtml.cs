@@ -9,7 +9,7 @@ namespace Petshop.Pages.Animals
     public class GuineapigsModel : PageModel
     {
         AnimalCatalog animalCatalog;
-        public Dictionary<int, Animal> Animals { get; private set; }
+        public List<Animal> Animals { get; private set; }
 
 
         public IActionResult OnGet()

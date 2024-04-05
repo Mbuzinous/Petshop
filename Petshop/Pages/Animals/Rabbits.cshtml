@@ -7,13 +7,10 @@
     ViewData["Title"] = "All Rabbits";
 
 }
-<h1>Get All Rabbits</h1>
-<table class="table">
+<h1>All Rabbits</h1>
+<table class="table table-hover">
     <thead>
         <tr>
-            <th>
-                Type
-            </th>
             <th>
                 Navn
             </th>
@@ -36,14 +33,11 @@
     </thead>
     <tbody>
         @{
-            foreach (Animal item in Model.Animals.Values)
+            foreach (Animal item in Model.Animals)
             {
                 if (item is Rabbit)
                 {
                     <tr>
-                        <td>
-                            @item.Type
-                        </td>
                         <td>
                             @item.Navn
                         </td>
@@ -57,7 +51,7 @@
                             @item.Beskrivelse
                         </td>
                         <td>
-                            @item.Pris
+                            @item.Pris Kr
                         </td>
                         <td>
                             <img src="~/Images/@item.BilledeNavn" width="60" height="70">
